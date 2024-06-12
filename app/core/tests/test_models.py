@@ -5,7 +5,7 @@ Model user email and password
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
-class ModelTests(TestCase):
+class ModelTests(self, TestCase):
   def test_create_user_with_email_successful(self):
     email = 'test@example.com'
     password = 'testpass123'
